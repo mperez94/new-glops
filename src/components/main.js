@@ -1,10 +1,18 @@
-import logo from './logo.svg';
-import './main.css';
+import ItemListContainer from "./ItemListContainer"
 
-function main() {
-  return (
-    <h1>HOLA</h1>
-  );
+function Main (){
+
+    return (
+        
+        <div>
+            <img src="../images/background.png" alt="background-bebidas" />
+            <ItemListContainer greeting={"Productos"}/>
+            <h1>Glops!</h1>
+        </div>
+
+    )
+
+
 }
 
-export default main;
+export default Main
