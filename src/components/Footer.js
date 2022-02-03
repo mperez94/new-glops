@@ -3,7 +3,7 @@ function Footer (){
 
        <footer className="text-center">
 
-            <p>Copyright &copy; 2021 - Mariano Perez</p>
+            <p>Copyright &copy; 2022 - Mariano Perez</p>
 
        </footer>
         
