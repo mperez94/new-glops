@@ -5,10 +5,11 @@ function Main (){
     return (
         
         <div>
-            <img src="../images/background.png" alt="background-bebidas" />
-            <ItemListContainer greeting={"Productos"}/>
             <h1>Glops!</h1>
+            <ItemListContainer />
+            <img src="../images/background.png" alt="background-bebidas" />
         </div>
+        
 
     )
 
