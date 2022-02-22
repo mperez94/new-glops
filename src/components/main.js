@@ -6,7 +6,6 @@ function Main (){
         
         <div>
             <h1>Glops!</h1>
-            <ItemListContainer />
             <img src="../images/background.png" alt="background-bebidas" />
         </div>
         

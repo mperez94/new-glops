@@ -1,34 +1,36 @@
 import React, { useState } from 'react';
+import { Card } from 'react-bootstrap';
+import ItemCount from './itemCount';
+import './style.css';
 
     function ItemListContainer (){
-        const [count, setCount] = useState(1);
 
-            const sumaClick = () => {
-                if (count < 10) {
-                    setCount(count + 1);
+            const sumaClick = (numero) => {
+                if (numero < 10) {
+                   return numero + 1;
+                }else {
+                    return numero;
                 }
             };
 
-            const restoClick = () => {
-            if (count > 1) {
-                setCount(count - 1);
+            const restaClick = (numero) => {
+            if (numero > 1) {
+                return numero - 1;
+            }else {
+                return numero;
             }
             };
 
-
+        
     return (
-        <div className="card d-flex" style={{width: "18rem"}}>
-            <img className="card-img-top" src="..." alt="Card image cap"/>
-            <div className="card-body">
-            <h5 className="card-title">Producto</h5>
-            <p className="card-text">Informacion del producto / STOCK MAX 10</p>
-            <p>Cantidad: {count}</p>
-            <button onClick={restoClick} class="btn btn-primary btnresta">-</button>
-            <button onClick={sumaClick} class="btn btn-primary btnsuma" style={{margin: "5px"}}>+</button>
-            <button>Agregar al Carrito</button>
-        </div>
-        </div>
-    )
+        <Card className='producto' style={{ width: '18rem'}}>
+        <Card.Img variant="top" src="holder.js/100px180" alt='img'/>
+        <Card.Body>
+          <Card.Title>Producto</Card.Title>
+        </Card.Body>
+        <ItemCount sumar={sumaClick} restar={restaClick}/>
+      </Card>
+          );
     }
 
 
